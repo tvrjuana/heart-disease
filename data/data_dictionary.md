@@ -3,11 +3,11 @@
 * `sex`: sex of the patient
     - 0 = male
     - 1 = female
-* `cp`: Chest Pain type chest pain type
-    - 1 = typical angina
-    - 2 = atypical angina
-    - 3 = non-anginal pain
-    - 4 = asymptomatic
+* `cp`: Chest Pain type
+    - 0 = typical angina
+    - 1 = atypical angina
+    - 2 = non-anginal pain
+    - 3 = asymptomatic
 * `trtbps`: resting blood pressure (in mm Hg)
 * `chol`: cholestoral in mg/dl fetched via BMI sensor
 * `fbs`: (fasting blood sugar > 120 mg/dl)
