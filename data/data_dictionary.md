@@ -1,8 +1,8 @@
 # Column Names and Descriptions for Heart Attack Analysis Dataset
 * `age`: age of the patient
 * `sex`: sex of the patient
-    - 0 = male
-    - 1 = female
+    - 0 = female
+    - 1 = male
 * `cp`: Chest Pain type
     - 0 = typical angina
     - 1 = atypical angina
@@ -26,7 +26,7 @@
     - 0 = unsloping
     - 1 = flat
     - 2 = downsloping
-* `caa`: number of major vessels (0-3)
+* `caa`: number of major vessels colored by flouroscopy
 * `thall`: thalessemia
     - 0 = null
     - 1 = fixed defect
