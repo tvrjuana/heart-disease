@@ -22,7 +22,9 @@ heart.csv has 14 columns and 303 entries. This a fairly small dataframe (since i
 
 The first and largest section of this notebook is the Exploratory Data Analysis (EDA) since there are no null values and there are no columns that could be dropped. 
 
-![graph1](./images/correaltion_heatmap.png)
+![graph1](./images/correlation_heatmap.png)
+
+
 A correlation heatmap to see which features have a higher correaltion (postive or negative) with the target variable output: 0 less chance of heart disease and 1 more chance of heart disease. 
 
 From the heatmap can see that variables cp, thalachh, slp have the highest positive correlation and exng, oldpeak, caa, thall have the highest negative correlation.
@@ -30,6 +32,8 @@ From the heatmap can see that variables cp, thalachh, slp have the highest posit
 ### Highest Positive Correlation 
 
 ![graph2](./images/chest_pain.png)
+
+
 With the patient that has typical angina there are less likely to have heart disease, however when they have atypical angina or non-anginal pain there are more likely to have heart disease.
 
 ![graph3](./images/thalachh.png)
@@ -50,20 +54,27 @@ On average people who do not have a heart disease their thalachh is lower compar
 
 ![graph5](./images/exng.png)
 
+
 It was negatively correlated; therefore, the people who did not have exng were more likely to be diagnosed with heart disease.
 
 ![graph5](./images/oldpeak_exng.png)
+
+
 Oldpeak: ST depression induced by exercise relative to rest This relationship between oldpeak and exng:
 
 - when exng is no there is a larger range in oldpeak
 - people who do have heart diesease tend to have a lower range in oldpeak
 
 ![graph6](./images/caa.png)
+
+
 Fluoroscopy: an imaging technique that uses X-rays to obtain real-time moving images of the interior of an object
 
 From the correlation heatmap - saw that caa was negatively correlated therefore it makes sense that when caa is equal to 0 than the output has higher heart disease value.
 
 ![graph7](./images/thall.png)
+
+
 Thalessemia: a genetic blood disorder that is characterized by a lower rate of hemoglobin than normal
 
 - 0 = null
@@ -74,4 +85,4 @@ Thalessemia: a genetic blood disorder that is characterized by a lower rate of h
 As the plot shows when thall was equal to 2 i.e normal, people were diagnosed with heart disease with three (reversable defect) coming in second. This makes sense since thalessemia is relatively rare in the world with it effecting only 1.8% of the global population. Here is a [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2893117/) explaining the disorder in detail.
 
 ## Dummy Model 
-The Dummy Model was just using the majority class of the target variable to predict the 
+The Dummy Model for a Classifier is usually the most frequent. So this dummy model would predict the majority class, in this case 1 more likely for the patient to have heart disease.
